@@ -1,0 +1,4 @@
+<%@books.each do |book| %>
+<a href ="/book/<%=book.id%>"><%=book.user_name%></a><br>
+<%end%>
+<%=link_to "계정만들기","/book/new"%>

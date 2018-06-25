@@ -1,0 +1,6 @@
+<h1><%= @book.user_name%></h1><br>
+<h2><%= @book.password%></h2>
+
+<%=link_to "목록","/books"%>
+<%=link_to "삭제","/book/#{@book.id}", method:"delete"%>
+<%=link_to "수정","/book/#{@book.id}/edit"%>

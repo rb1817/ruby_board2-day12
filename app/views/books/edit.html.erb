@@ -1,0 +1,5 @@
+<%= form_tag("/book/#{@book.id}",method:"patch") do%>
+    <%= text_field_tag(:user_name,@book.user_name)%>
+    <%= text_field_tag(:password,@book.password)%>
+    <%= submit_tag("수정하기") %>
+<%end%>
